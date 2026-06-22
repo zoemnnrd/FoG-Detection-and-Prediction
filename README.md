@@ -122,3 +122,6 @@ Trains and evaluates the `MultiBranchCNN` directly on the Brazil dataset using *
 **`loso_training_constrained.ipynb`**
 Same LOSO setup and `MultiBranchCNN` architecture as `loso_training.ipynb`, but **restricted to two tasks** (`TASKS_TO_INCLUDE = ['8_Shape_Circuit_1', 'Narrow_Corridor_1']`) - the tasks richest in FoG events - rather than all tasks. Also goes further on the analysis side: post-processing (probability smoothing, minimum-duration filtering) tested on top of LOSO predictions, representative-subject plots (best/medium/worst fold), and PCA/t-SNE visualization of learned features.
 
+
+Reproducibility note: All notebooks include saved outputs (figures, metrics) from the original runs and serve as a record of the results obtained. Most analyses can be reproduced by re-running the notebooks from scratch; however, not all intermediate model weights were saved, so some results may differ slightly due to random initialization and training stochasticity.
+
