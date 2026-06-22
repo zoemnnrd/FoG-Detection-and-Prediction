@@ -81,8 +81,7 @@ Exploratory step asking whether the *trained detection model's* output probabili
 Builds a dedicated **pre-FoG model** (not just reusing the detection model's probabilities). Two variants:
 - **3-class** version: Normal (0) / Pre-FoG (1, 2–5s before onset) / FoG (2)
 - **2-class** version: Normal (0) / Any FoG signal — Pre-FoG or FoG combined (1)
-
-Includes a dedicated `PreFoGDetector` model and `PreFoGDataset`, class-weight handling for the imbalance and evaluation of both variants.
+  
 ---
 
 # Part 2 - Brazil dataset
